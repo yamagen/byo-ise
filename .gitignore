@@ -10,3 +10,4 @@ tmp/
 *.run.xml
 *.toc
 *.xdv
+*-SAVE-ERROR
