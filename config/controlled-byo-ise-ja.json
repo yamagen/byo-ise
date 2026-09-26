@@ -1,0 +1,86 @@
+{
+  "filename": "controlled-byo-ise-ja.json",
+  "schema": {
+    "word": "off",
+    "lemma": "off",
+    "kana": "off",
+    "lemma-kana": "off",
+    "romaji": "off",
+    "lemma-romaji": "off",
+    "gloss": "controlled",
+    "pos": "controlled",
+    "ku": "integer"
+  },
+  "conjugation": {
+    "ADV": "adverbial / ren'yokei",
+    "ATTR": "attributive / rentaikei",
+    "FIN": "finite / sentence-final",
+    "IRR": "irrealis / mizenkei",
+    "REALIS": "realis / izenkei"
+  },
+  "pos": {
+    "N": "noun",
+    "PN": "proper noun",
+    "PRON": "pronoun",
+    "V": "verb",
+    "ADJ": "adjective",
+    "ADJV": "adjectival verb",
+    "ADV": "adverb",
+    "ATD": "adnominal",
+    "DET": "determiner",
+    "CJ": "conjunction",
+    "INTJ": "interjection",
+    "AUX": "auxiliary",
+    "P": "particle",
+    "FIX": "fixed expression"
+  },
+  "gloss": {
+    "ABL": "ablative",
+    "ACC": "accusative",
+    "ALL": "allative",
+    "CAUS": "causative",
+    "COM": "comitative",
+    "COND": "conditional",
+    "COP": "copula",
+    "DAT": "dative",
+    "DECL": "declarative",
+    "FOC": "focus",
+    "FUT": "future",
+    "GEN": "genitive",
+    "HON": "honorific",
+    "INFER": "inferential",
+    "LOC": "locative",
+    "MOD": "modal",
+    "NEG": "negation / negative",
+    "NMLZ": "nominalizer / nominalization",
+    "NOM": "nominative",
+    "PASS": "passive",
+    "PERF": "perfect",
+    "PEFV": "perfective",
+    "PFV": "perfective",
+    "PL": "plural",
+    "POT": "potential",
+    "PROH": "prohibitive",
+    "PST": "past",
+    "PURP": "purposive",
+    "Q": "question particle / marker",
+    "QUOT": "quotative",
+    "REASON": "reason / causal",
+    "TOP": "topic",
+    "VOL": "volitional",
+    "WISH": "wish",
+    "CNTF": "counterfactual"
+  },
+  "emit": {
+    "latex": {
+      "begin": ["\\ex", "\\begingl"],
+      "lines": [{ "tag": "word", "command": "\\gla" }],
+      "translations": [
+        { "tag": "translation-ja-literal", "command": "\\glft" },
+        { "tag": "translation-ja-natural", "command": "\\glft" },
+        { "tag": "translation-ja-reading", "command": "\\glft" }
+      ],
+      "end": ["\\endgl", "\\xe"]
+    }
+  }
+}

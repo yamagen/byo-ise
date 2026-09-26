@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+
+\input{header-common.tex}
+
+\usepackage{tocloft}
+\setlength{\cftsecnumwidth}{4em}
+
+\AtBeginDocument{%
+  \renewcommand{\refname}{References}%
+  \renewcommand{\bibname}{References}%
+}
+
+% header-en.tex
+\renewcommand{\thesection}{Dan~\arabic{section}}
+
+\title{\bfseries The Tale of Ise --- BYO Reading}
+\author{Hilofumi Yamamoto\\Institute of Science Tokyo}
+\date{\today}

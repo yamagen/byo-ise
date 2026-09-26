@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+
+\input{header-common.tex}
+
+\usepackage{indentfirst}
+\newlength{\zw}
+\settowidth{\zw}{あ}
+\setlength{\parindent}{\zw}
+
+\usepackage{tocloft}
+\setlength{\cftsecnumwidth}{4em}
+
+
+\renewcommand{\tablename}{表}
+\renewcommand{\figurename}{図}
+\AtBeginDocument{%
+  \renewcommand{\refname}{文献}%
+  \renewcommand{\bibname}{文献}%
+}
+
+
+% header-ja.tex
+\renewcommand{\thesection}{第\arabic{section}段}
+
+
+\title{\bfseries 読み手勝手伊勢物語}
+\author{山元啓史\\東京科学大学}
+\date{\today}

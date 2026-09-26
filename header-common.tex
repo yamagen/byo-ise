@@ -1,0 +1,93 @@
+\usepackage[a4paper,margin=25mm]{geometry}
+
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\setCJKsansfont[
+  BoldFont=HaranoAjiGothic-Bold.otf
+]{HaranoAjiGothic-Regular.otf}
+\setCJKmonofont[
+  BoldFont=HaranoAjiGothic-Bold.otf
+]{HaranoAjiGothic-Regular.otf}
+\setCJKmainfont[
+  BoldFont=HaranoAjiMincho-Bold.otf,
+  ItalicFont=HaranoAjiMincho-Regular.otf,
+  BoldItalicFont=HaranoAjiMincho-Bold.otf
+]{HaranoAjiMincho-Regular.otf}
+
+\usepackage{float}
+\usepackage{fvextra}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amssymb,amsthm}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash\hsize=.75\hsize}X}
+\newcolumntype{Z}{>{\raggedright\arraybackslash\hsize=1.25\hsize}X}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\usepackage[
+  backend=biber,
+  style=authoryear,
+  maxnames=99,
+  maxbibnames=99,
+  maxcitenames=2,
+  mincitenames=1,
+  url=false,
+  doi=true
+]{biblatex}
+
+\IfFileExists{koten.bib}{\addbibresource{koten.bib}}{}
+
+\DeclareDelimFormat{multinamedelim}{\addcomma\space}
+\DeclareDelimFormat{finalnamedelim}{\addcomma\space}
+\renewbibmacro{in:}{}
+
+\usepackage{caption}
+\captionsetup{
+  format=hang,
+  singlelinecheck=true,
+  skip=4pt
+}
+
+\usepackage{expex}
+\lingset{
+  everygla=\normalsize,
+  everyglb=\footnotesize,
+  everyglft=\normalsize
+}
+
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+\newenvironment{myquote}
+  {\begin{mdframed}[
+      topline=false,
+      rightline=false,
+      bottomline=false,
+      linewidth=3pt,
+      linecolor=lightgray,
+      leftmargin=1\parindent,
+      innerleftmargin=0pt,
+      innerrightmargin=0pt,
+      skipabove=\baselineskip,
+      skipbelow=\baselineskip
+    ]\ifJA\hspace{\parindent}\fi\ignorespaces}
+  {\end{mdframed}}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{setspace}
+\usepackage{csquotes}
+
+\usepackage{datetime2}
+\DTMnewdatestyle{YMDdots}{
+  \renewcommand{\DTMdisplaydate}[4]{%
+    \number##1.\DTMtwodigits{##2}.\DTMtwodigits{##3}%
+  }
+}
+\DTMsetdatestyle{YMDdots}
