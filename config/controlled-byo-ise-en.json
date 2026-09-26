@@ -78,11 +78,24 @@
         { "tag": "romaji", "command": "\\gla" },
         { "tag": "gloss", "command": "\\glb", "split": "." }
       ],
-      "translations": [
-        { "tag": "translation-en-literal", "command": "\\glft" },
-        { "tag": "translation-en-natural", "command": "\\glft" },
-        { "tag": "translation-en-reading", "command": "\\glft" }
-      ],
+      "mult-translation": {
+        "command": "\\glft",
+        "separator": "\\\\",
+        "items": [
+          {
+            "tag": "translation-en-literal",
+            "label": "L"
+          },
+          {
+            "tag": "translation-en-natural",
+            "label": "N"
+          },
+          {
+            "tag": "translation-en-reading",
+            "label": "R"
+          }
+        ]
+      },
       "end": ["\\endgl", "\\xe"]
     }
   }

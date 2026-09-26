@@ -75,11 +75,24 @@
     "latex": {
       "begin": ["\\ex", "\\begingl"],
       "lines": [{ "tag": "word", "command": "\\gla" }],
-      "translations": [
-        { "tag": "translation-ja-literal", "command": "\\glft" },
-        { "tag": "translation-ja-natural", "command": "\\glft" },
-        { "tag": "translation-ja-reading", "command": "\\glft" }
-      ],
+      "mult-translation": {
+        "command": "\\glft",
+        "separator": "\\\\",
+        "items": [
+          {
+            "tag": "translation-ja-literal",
+            "label": "L"
+          },
+          {
+            "tag": "translation-ja-natural",
+            "label": "N"
+          },
+          {
+            "tag": "translation-ja-reading",
+            "label": "R"
+          }
+        ]
+      },
       "end": ["\\endgl", "\\xe"]
     }
   }

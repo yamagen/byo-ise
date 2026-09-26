@@ -1,4 +1,4 @@
-Last change: 2026/09/26-18:57:10.
+Last change: 2026/09/26-19:25:15.
 
 # The Tale of Ise — BYO Reading
 
@@ -7,8 +7,8 @@ Last change: 2026/09/26-18:57:10.
 
 ## Author
 
-- Hilofumi Yamamoto, Ph.D.
-- Institute of Science Tokyo, Japan
+Hilofumi Yamamoto, Ph.D.  
+Institute of Science Tokyo, Japan
 
 ## About
 
