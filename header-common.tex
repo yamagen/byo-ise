@@ -96,3 +96,26 @@
   {\footnotesize\llap{#1:\enspace}#2}%
 }
 
+\makeatletter
+\def\ep@actualexnoprint{{%
+  \if@specialexno
+    \ep@specialexnoprint
+  \else
+    \ifx\ling@sampleexno\empty
+      \exnoprint
+    \else
+      \hbox to \epd@sampleexnowidth{\hss\exnoprint}%
+    \fi
+  \fi
+}}
+\makeatother
+
+\lingset{
+  sampleexno=10*,
+  exnoformat=X\hphantom{*}
+}
+
+\newenvironment{poemgloss}
+  {\begingroup
+   \lingset{exnoformat=X*}}
+  {\endgroup}
